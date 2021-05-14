@@ -124,6 +124,21 @@ For other installation methods, configuration options, and a demo, visit
 
   [1]: https://squidfunk.github.io/mkdocs-material/
 
+## Development
+
+When cloning this fork, remember to add an upstream remote to the original for periodic updates to be merged.
+
+```
+git remote add upstream https://github.com/squidfunk/mkdocs-material.git
+```
+
+Work on this branch will be packaged and published on the internal project repository for use in the CI/CD doc build
+processes. See <https://pages.oxnet.nhs.uk/www/pages-ouh-mkdocs/-/packages>. Similarly, find the Issues for this work
+being tracked at <https://pages.oxnet.nhs.uk/www/pages-ouh-mkdocs/-/issues>.
+
+Work prior to this commit+branch has been reset and rebuilt according to the changes made with the 7.x release of
+mkdocs-material project on this branch to make tracking and upstream changes more easily traced in the future.
+
 ## Premium Sponsors
 
 <p>

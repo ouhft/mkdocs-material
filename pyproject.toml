@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "mkdocs-material-ouh"
+version = "7.0.0"  # Keep the major inline with underlying project, use minor and patch values specifically for OUH
+description = "A Material Design theme for MkDocs featuring the NHS Colour theme"
+authors = ["Martin Donath <martin.donath@squidfunk.com>"]
+license = "MIT"
+maintainers = ["Carl Marshall <carl.marshall@ouh.nhs.uk"]
+readme = "README.md"
+homepage = "https://squidfunk.github.io/mkdocs-material/"  # Until/unless we do an OUH build at ouhft.github.io
+repository = "https://github.com/ouhft/mkdocs-material.git"
+documentation = "https://squidfunk.github.io/mkdocs-material/"
+keywords = ["mkdocs", "documentation", "theme"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Web Environment",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: JavaScript",
+  "Programming Language :: Python",
+  "Topic :: Documentation",
+  "Topic :: Software Development :: Documentation",
+  "Topic :: Text Processing :: Markup :: HTML"
+]
+include = ["material", "LICENSE", "package.json", "README.md"]
+exclude = ["material/overrides", "site", "src"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mkdocs = "^1.1"
+Pygments = "^2.4"
+markdown = "^3.2"
+pymdown-extensions = "^7.0"
+mkdocs-material-extensions = "^1.0"
+
+[tool.poetry.dev-dependencies]
+mkdocs-minify-plugin = "^0.4.0"
+mkdocs-redirects = "^1.0.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
